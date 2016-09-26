@@ -11,9 +11,8 @@
 <body>
 	<!-- header -->
 	<header>
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
+		<nav class="navbar-default">
+			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
@@ -23,7 +22,6 @@
 					</button>
 					<a class="navbar-brand" href="#">Code Girls</a>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
 						<li class="active"><a href="#">Inicio</a></li>
@@ -31,30 +29,30 @@
 						<li><a href="#">Hackathon</a></li>
 						<li><a href="#">Contacto</a></li>
 					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container-fluid -->
+				</div>
+			</div>
 		</nav>
 	</header>
 	<!-- section1 -->
 	<section>
 		<div class="home text-center">
 			<h1 class="titulo">CHICAS QUE CAMBIAN EL MUNDO</h1>
-			<p class="parrafo">¡Participa en nuestras actividades!</p>
+			<p>¡Participa en nuestras actividades!</p>
 			<button class="btn btn-primary">Inscríbete</button>
 		</div>
 	</section>
 	<!-- section2 -->
 	<section>
-		<div class="fondoblanco">
+		<div class="fondo-blanco">
 			<div class="container">
-				<h2>VE NUESTRO DOCUMENTAL</h2>
+				<h2 class="text-center">VE NUESTRO DOCUMENTAL</h2>
 				<div class="row">
 					<div class="col-sm-6">
-						<h2>CODE GIRLS</h2>
-						<p>El documental muestra el trabajo de diferentes equipos integrados por chicas de escuelas secundarias (provenientes de Estados Unidos, Brasil, India y México) que, junto con un mentor o una mentora que acompaña su experiencia, disponen de tres meses para crear un plan de negocios y una aplicación que resuelve problemas en sus comunidades, en el marco de la competencia Technovation.</p>
+						<h2 class="text-center">CODE GIRLS</h2>
+						<p class="text-justify">El documental muestra el trabajo de diferentes equipos integrados por chicas de escuelas secundarias (provenientes de Estados Unidos, Brasil, India y México) que, junto con un mentor o una mentora que acompaña su experiencia, disponen de tres meses para crear un plan de negocios y una aplicación que resuelve problemas en sus comunidades, en el marco de la competencia Technovation.</p>
 						<p>De la competencia expuesta en el documental participaron 300 equipos, de los cuales 44 llegaron a la semifinal, luego seis resultaron finalistas y finalmente el ganador recibó un premio de 10.000 dólares.</p>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-6 "><!-- "embed-responsive embed-responsive-16by9" -->
 						<iframe width="560" height="315" src="https://www.youtube.com/embed/cRb5iel-3Ck" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
@@ -63,19 +61,74 @@
 	</section>
 	<!-- section3 -->
 	<section>
-		<div class="fondoamarillo">
-			<div class="row">
-				<div class="col-sm-6">
-					<!-- imgback -->
-				</div>
-				<div class="col-sm-6">
-					<h2>HACKATHON</h2>
-					<p>¡Participa en nuestra hackathon "Love is Respect"!</p>
-					<p>Idea soluciones a las problemáticas que te presentaremos, rodeada de chicas tan geniales como tú. Nos reuniremos el 30 de septiembre desde las 10 am.</p>
-					<button class="btn btn-primary">Inscríbete</button>
+		<div class="fondo-amarillo">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<img class="imghackathon" src="img/hackathon.jpg" alt="">
+					</div>
+					<div class="col-sm-6">
+						<h2 class="text-center">HACKATHON</h2>
+						<p>¡Participa en nuestra hackathon "Love is Respect"!</p>
+						<p>Idea soluciones a las problemáticas que te presentaremos, rodeada de chicas tan geniales como tú. Nos reuniremos el 30 de septiembre desde las 10 am.</p>
+						<button class="btn btn-primary">Inscríbete</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- section4 -->
+	<section>
+		<div class="row container">
+			<div class="col-sm-6">
+				<img class="imgmade" src="img/made_with_code.jpg" alt="">
+			</div>
+			<!-- formulario -->
+			<div class="col-sm-6">
+				<div class="formulario">
+					<h2>CONTACTO</h2>
+					<strong>Code Girls</strong>
+					<ul>
+						<li>795 Folsom Ave, Suite 600</li>
+						<li>San Francisco, CA 94107</li>
+						<li>Fono: (123) 456-7890</li>
+					</ul>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="inputname" placeholder="Nombre">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<input type="asunto" class="form-control" id="inputAsunto" placeholder="Asunto">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<textarea class="form-control" rows="6" placeholder="Mensaje"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-10">
+								<button type="submit" class="btn btn-primary">Enviar</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- foot -->
+	<footer>
+		<div class="fondo-azul">
+			<p class="container white">© 2016 Code Girl. Diseñado por <span class="yellow">Laboratoria</span></p>
+		</div>
+	</footer>
 </body>
 </html>
